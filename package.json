@@ -1,6 +1,7 @@
 {
   "name": "starter_kit",
   "version": "0.2.0",
+  "homepage": "https://sujaykumarmag.github.io/blockchain_voting_system",
   "private": false,
   "dependencies": {
     "@babel/preset-react": "^7.16.7",
@@ -23,7 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "deploy": "npx hardhat run src/backend/scripts/deploy.js --network localhost",
+    "predeploy": "npm run build",
+     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,6 +50,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.16.11"
+    "@babel/preset-env": "^7.16.11",
+    "gh-pages": "^4.0.0"
   }
 }
