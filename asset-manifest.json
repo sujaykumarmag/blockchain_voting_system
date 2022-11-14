@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/blockchain_voting_system/static/css/main.00980ad0.css",
+    "main.js": "/blockchain_voting_system/static/js/main.1fd5f062.js",
+    "index.html": "/blockchain_voting_system/index.html",
+    "main.00980ad0.css.map": "/blockchain_voting_system/static/css/main.00980ad0.css.map",
+    "main.1fd5f062.js.map": "/blockchain_voting_system/static/js/main.1fd5f062.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00980ad0.css",
+    "static/js/main.1fd5f062.js"
+  ]
+}
