@@ -33,18 +33,31 @@ const Vote = ({ voter, address }) => {
     }
     const showList = arr.map((data) => {
         return (<div>
-            <>
-                <p>{parseInt(data.id)}</p>
-                <p>{data.addr}</p>
-                <p>{data.name}</p>
-            </>
+            <div className="card w-106 bg-base-400 shadow-xl">
+                <div className="card-body">
+                    <h2 className="card-title">{data.name}</h2>
+                    <h6>{data.addr}</h6>
+                    <div className="card-actions justify-end">
+                        <button className="btn btn-primary">{parseInt(data.id)}</button>
+                    </div>
+                </div>
+            </div>
         </div>)
     })
     return (
-        <div>
-            {done ? showList : <button onClick={getAddressList}>Agree To all the Terms and Conditions</button>}
+        
+        <div class="grid v-screen place-items-center">
+            {done ? showList :<div> <button class="btn btn-outline" onClick={getAddressList}>Agree To all the Terms and Conditions</button></div>}
+            
             <button onClick={voteUp(choose)}>
-                <input onChange={(event)=>{setChoosen(event.target.value)}} placeholder="Enter the address who u wanna Vote" />
+                <div className="form-control">
+                    <label className="label">
+                        <span className="label-text"> Enter the address who u wanna Vote</span>
+                    </label>
+                    <label className="input-group input-group-vertical">
+                        <input onChange={(event) => { setChoosen(event.target.value) }}  type="text" placeholder="0x....." className="input input-bordered" />
+                    </label>
+                </div>
             </button>
         </div>
     )
