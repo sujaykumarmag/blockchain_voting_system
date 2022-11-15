@@ -85,10 +85,10 @@ function App() {
               </div>
             </div>
             <Routes>
-              <Route path='https://sujaykumarmag.github.io/blockchain_voting_system/' element={<Home voter={voter} account={account} />} />
-              <Route path="https://sujaykumarmag.github.io/blockchain_voting_system/admin/addcitizen" element={<AddCitizen voter={voter} account={account} />} />
-              <Route path="https://sujaykumarmag.github.io/blockchain_voting_system/admin/addparticipant" element={<AddParticipant voter={voter} account={account} />} />
-              <Route path="https://sujaykumarmag.github.io/blockchain_voting_system/vote" element={<Vote voter={voter} account={account} />} />
+              <Route path='/' element={<Home voter={voter} account={account} />} />
+              <Route path="/admin/addcitizen" element={<AddCitizen voter={voter} account={account} />} />
+              <Route path="/admin/addparticipant" element={<AddParticipant voter={voter} account={account} />} />
+              <Route path="/vote" element={<Vote voter={voter} account={account} />} />
             </Routes>
 
           </div>
@@ -98,23 +98,23 @@ function App() {
 
               <ul className="menu p-4 w-70 bg-base-100 text-base-content">
 
-                <li><a href="https://sujaykumarmag.github.io/blockchain_voting_system/">
+                <li><a href="/">
                   <div className="grid h-20 flex-grow card bg-base-200 rounded-box place-items-center">
                     <a>Results</a>
                   </div>
 
                 </a></li>
-                <li><a href="https://sujaykumarmag.github.io/blockchain_voting_system/admin/addcitizen">
+                <li><a href="/admin/addcitizen">
                   <div className="grid h-20 flex-grow card bg-base-200 rounded-box place-items-center">
                     <a>Add a Citizen</a>
                   </div>
                 </a></li>
-                <li><a href="https://sujaykumarmag.github.io/blockchain_voting_system/admin/addparticipant">
+                <li><a href="/admin/addparticipant">
                   <div className="grid h-20 flex-grow card bg-base-200 rounded-box place-items-center">
                     <a>Add a Participant</a>
                   </div>
                 </a></li>
-                <li><a href="https://sujaykumarmag.github.io/blockchain_voting_system/vote">
+                <li><a href="/vote">
                   <div className="grid h-20 flex-grow card bg-base-200 rounded-box place-items-center">
                     <a>My Vote</a>
                   </div>
