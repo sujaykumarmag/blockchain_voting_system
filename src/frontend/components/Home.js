@@ -51,18 +51,25 @@ const Home = ({ voter, address }) => {
     }
 
     const showList = final.map((data,key) => {
-        return (<div>
-            <>
-                <p>{data.addr}</p>
-                <p>{data.name}</p>
-                <p>{data.votes}</p>
-            </>
+        return (
+            
+            <div>
+                <div className="card w-106 bg-base-400 shadow-xl">
+                    <div className="card-body">
+                        <h2 className="card-title">{data.name}</h2>
+                        <h6>{data.addr}</h6>
+                        <div className="card-actions justify-end">
+                            
+                            <button className="btn btn-primary">{data.votes}</button>
+                        </div>
+                    </div>
+                </div>
         </div>)
     })
 
     return (
         <div>
-            {done ? showList : <button onClick={getAddressList}>Get Results</button>}
+            {done ? showList : <div class="grid h-screen place-items-center"><button className="btn btn-outline" onClick={getAddressList}>Get Results</button></div>}
         </div>
     )
 }

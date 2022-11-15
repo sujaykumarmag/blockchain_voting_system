@@ -34,16 +34,34 @@ const AddCitizen = ({ voter, address }) => {
     const showList = 
         arr.map((data) => {
             return (<div>
-                <><p>{parseInt(data.id)}</p>{data.addr}</>
+                <div className="card w-106 bg-base-400 shadow-xl">
+                    <div className="card-body">
+                        <h2 className="card-title">{data.addr}</h2>
+
+                        <div className="card-actions justify-end">
+
+                            <button className="btn btn-primary">{parseInt(data.id)}</button>
+                        </div>
+                    </div>
+                </div>
             </div>)
         })
     
     return (
         <div>
-            <button onClick={addCitizen({ address: citizen })}>
-                <input onChange={add} value={citizen} type="text" placeholder="Enter the Addresss" />
-            </button>
-            {done ? showList : <button onClick={getAddressList}>Get all Citizens with Addressses</button>}
+            <div class="grid v-screen place-items-center">
+                <button onClick={addCitizen({ address: citizen })}>
+                    <div className="form-control">
+                        <label className="label">
+                            <span className="label-text"> Voters Account Address</span>
+                        </label>
+                        <label className="input-group input-group-vertical">
+                            <input onChange={add} value={citizen} type="text" placeholder="0x....." className="input input-bordered" />
+                        </label>
+                    </div>
+                </button>
+            </div>
+            {done ? showList : <div class="grid h-screen place-items-center"><button class="btn btn-outline" onClick={getAddressList}>Get all Citizens with Addressses</button></div>}
         </div>
     )
 }
