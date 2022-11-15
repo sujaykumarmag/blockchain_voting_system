@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/blockchain_voting_system/static/css/main.d07b1934.css",
-    "main.js": "/blockchain_voting_system/static/js/main.0c7034d9.js",
+    "main.js": "/blockchain_voting_system/static/js/main.dcf62eda.js",
     "index.html": "/blockchain_voting_system/index.html",
     "main.d07b1934.css.map": "/blockchain_voting_system/static/css/main.d07b1934.css.map",
-    "main.0c7034d9.js.map": "/blockchain_voting_system/static/js/main.0c7034d9.js.map"
+    "main.dcf62eda.js.map": "/blockchain_voting_system/static/js/main.dcf62eda.js.map"
   },
   "entrypoints": [
     "static/css/main.d07b1934.css",
-    "static/js/main.0c7034d9.js"
+    "static/js/main.dcf62eda.js"
   ]
 }
